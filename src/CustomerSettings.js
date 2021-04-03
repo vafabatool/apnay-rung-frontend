@@ -67,21 +67,26 @@ const CustomerSettings = () => {
           onChange={handleEmail}
         ></input>
         <br />
-        <p className="label-form">Current Password:</p>
-        <input
-          className="input-form"
-          type="text"
-          value={currPass}
-          onChange={handleCurrPass}
-        ></input>
         <br />
-        <p className="label-form">New Password:</p>
-        <input
-          className="input-form"
-          type="text"
-          value={newPass}
-          onChange={handleNewPass}
-        ></input>
+        <span>
+          <label className="label-form-cp">Current Password:</label>
+          <label className="label-form-np">New Password:</label>
+        </span>
+        <br />
+        <span>
+          <input
+            className="input-form-cp"
+            type="text"
+            value={currPass}
+            onChange={handleCurrPass}
+          ></input>
+          <input
+            className="input-form-np"
+            type="text"
+            value={newPass}
+            onChange={handleNewPass}
+          ></input>
+        </span>
         <br />
         <p className="label-form">Phone Number:</p>
         <input
