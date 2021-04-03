@@ -22,7 +22,7 @@ export default function App() {
   return (
     <div className="App">
       <AdminSettings />
-      <CustomerSettings />
+      {/* <CustomerSettings /> */}
       {/* <CustomerSettings /> */}
       {/* <ShoppingCart /> */}
       {/* <Notifications /> */}
