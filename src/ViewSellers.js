@@ -6,7 +6,7 @@ import BottomBar from "./BottomBar";
 import PersonAddDisabledIcon from "@material-ui/icons/PersonAddDisabled";
 import PersonAddIcon from "@material-ui/icons/PersonAdd";
 import FlashOnIcon from "@material-ui/icons/FlashOn";
-import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
 const ViewSellers = () => {
   const [state, setState] = useState([
     {

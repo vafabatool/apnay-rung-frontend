@@ -3,6 +3,7 @@ import AdminNavbar from "./AdminNavbar";
 import Memory from "./Memory";
 import BottomBar from "./BottomBar";
 import { useState } from "react";
+import back_image from "./css/back.png";
 
 const CustomerSettings = () => {
   const [name, setName] = useState();
@@ -42,9 +43,12 @@ const CustomerSettings = () => {
       <Memory panel="Customer Panel" page="" current="Account Settings" />{" "}
       {/* when three links needed in panel, include a '/' in the middle 'page' argument */}
       <span>
-        {/* <a id=back-btn><img src=/css/back.png width="26"></a> */}
-        <h1 id="page-title">Account Settings</h1>
+        <a className="back-btn">
+          <img src={back_image} width="26" />
+          <h1 className="back-btn-page-title">Account Settings</h1>
+        </a>
       </span>
+      <br />
       <br />
       <form>
         <p className="label-form">Name:</p>
