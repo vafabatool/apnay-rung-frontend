@@ -6,7 +6,9 @@ import BottomBar from "./BottomBar";
 import PersonAddDisabledIcon from "@material-ui/icons/PersonAddDisabled";
 import PersonAddIcon from "@material-ui/icons/PersonAdd";
 import FlashOnIcon from "@material-ui/icons/FlashOn";
-// import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import { Modal, Button } from "react-bootstrap";
+
 const ViewSellers = () => {
   const [state, setState] = useState([
     {
@@ -44,10 +46,15 @@ const ViewSellers = () => {
     }
   );
 
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const Block = (blockStatus) => {
     if (blockStatus === false) {
       return (
-        <a href="#delete" className="link">
+        <a href="#top" className="link" onClick={handleShow}>
           <PersonAddDisabledIcon
             style={{
               fontSize: "medium"
@@ -58,7 +65,7 @@ const ViewSellers = () => {
       );
     } else {
       return (
-        <a href="#delete" className="link">
+        <a href="#top" className="link">
           <PersonAddIcon
             style={{
               fontSize: "medium"
@@ -73,7 +80,7 @@ const ViewSellers = () => {
   const Spotlight = (weeklyartisan) => {
     if (weeklyartisan === false) {
       return (
-        <a href="#delete" className="link">
+        <a href="#top" className="link">
           <FlashOnIcon
             style={{
               fontSize: "medium"
@@ -84,7 +91,7 @@ const ViewSellers = () => {
       );
     } else {
       return (
-        <a href="#delete" className="link">
+        <a href="#top" className="link">
           <FlashOnIcon
             style={{
               fontSize: "medium"
@@ -148,6 +155,28 @@ const ViewSellers = () => {
         </table>
       </div>
       <BottomBar />
+      <Modal show={show} onHide={handleClose} className="delete-modal">
+        <Modal.Header closeButton>
+          <Modal.Title>Confirm Delete</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Are you sure you want to block this customer?</Modal.Body>
+        <Modal.Footer>
+          <Button
+            variant="secondary"
+            onClick={handleClose}
+            className="delete-secondary"
+          >
+            Don't Block
+          </Button>
+          <Button
+            variant="primary"
+            onClick={handleClose}
+            className="delete-primary"
+          >
+            Block Customer
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };
