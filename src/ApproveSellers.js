@@ -41,6 +41,7 @@ const ApproveSellers = () => {
   const renderTableData = () => {
     return state.sellers.map((seller, index) => {
       const { id, name, email, location, cnic } = seller; //destructuring
+      //hello im here
       return (
         <tr className="data">
           <td>{id}</td>
