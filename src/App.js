@@ -1,5 +1,5 @@
 import "./styles.css";
-import AdminSettings from "./AdminSettings";
+// import AdminSettings from "./AdminSettings";
 // import ViewSellers from "./ViewSellers";
 // import CustomerNavBar from "./CustomerNavbar";
 // import SellerNavbar from "./SellerNavbar";
@@ -17,13 +17,19 @@ import AdminSettings from "./AdminSettings";
 // import ShoppingCart from "./ShoppingCart";
 // import Checkout from "./Checkout";
 // import CustomerSettings from "./CustomerSettings";
-import SignUp from "./SignUp";
-
+// import SignUp from "./SignUp";
+import Catalog from "./Catalog.js";
+import Homepage from "./Homepage";
+// import SearchBar from "./SearchBar";
 export default function App() {
   return (
     <div className="App">
+      {/* <Catalog /> */}
+
+      <Homepage />
+
       {/* <AdminSettings /> */}
-      <SignUp />
+      {/* <SignUp /> */}
       {/* <CustomerSettings /> */}
       {/* <CustomerSettings /> */}
       {/* <ShoppingCart /> */}
