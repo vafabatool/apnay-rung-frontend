@@ -16,7 +16,7 @@ import AdminSettings from "./AdminSettings";
 // import ViewCustomers from "./ViewCustomers";
 // import ShoppingCart from "./ShoppingCart";
 // import Checkout from "./Checkout";
-import CustomerSettings from "./CustomerSettings";
+// import CustomerSettings from "./CustomerSettings";
 
 export default function App() {
   return (
