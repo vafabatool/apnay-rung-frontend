@@ -192,7 +192,6 @@ const Checkout = () => {
           <br /> IBAN: PK48HABB12345678910
         </p>{" "}
         <br />
-<<<<<<< Codesandbox
         <input
           type="submit"
           className="submit-button2"
@@ -213,28 +212,6 @@ const Checkout = () => {
 };
 export default Checkout;
 
-=======
-        <Link to="/ShoppingCart">
-          <input
-            type="submit"
-            className="submit-button2"
-            value="Return to Cart"
-          ></input>
-        </Link>
-        <Link to="/OrderConfirmation">
-          <input
-            type="submit"
-            className="submit-button3"
-            value="Confirm Order"
-          ></input>
-        </Link>
-      </form>
-      <br />
-      <br />
-      <br />
-      <BottomBar />
-    </div>
->>>>>>> GitHub
   );
 };
 export default Checkout;

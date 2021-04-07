@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
-import UseForm from "./UseForm";
-import validate from "./validateInfo";
+// import { useState, useEffect } from "react";
+import UseForm from "./UseLoginForm";
+import validate from "./validateLogin";
 import Logo from "./css/logo.png";
 
 import "./styles.css";
 
-const SignUpForm = ({ submitForm }) => {
+const LoginForm = ({ submitForm }) => {
   const { changeHandler, submitHandler, values, errors } = UseForm(
     submitForm,
     validate
@@ -119,6 +119,28 @@ const SignUpForm = ({ submitForm }) => {
           />
           {errors.password2 && <p>{errors.password2} </p>}
         </div>
+        <div className="form-inputs">
+          <input
+            type="text"
+            name="address"
+            className="input-form-signup"
+            placeholder="Address"
+            value={values.address}
+            onChange={changeHandler}
+          />
+          {errors.address && <p>{errors.address} </p>}
+        </div>
+        <div className="form-inputs">
+          <input
+            type="number"
+            name="phonenumber"
+            className="input-form-signup"
+            placeholder="Phone Number"
+            value={values.phonenumber}
+            onChange={changeHandler}
+          />
+          {errors.phonenumber && <p>{errors.phonenumber} </p>}
+        </div>
         <button className="next-step-btn" type="submit">
           Next Step
         </button>
@@ -132,4 +154,4 @@ const SignUpForm = ({ submitForm }) => {
   );
 };
 
-export default SignUpForm;
+export default LoginForm;

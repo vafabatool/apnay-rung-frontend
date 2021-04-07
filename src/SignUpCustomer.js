@@ -1,9 +1,9 @@
-import SignupForm from "./SignupForm";
-import SignupSuccess from "./SignupSuccess";
+import SignupFormCustomer from "./SignupFormCustomer";
+import SignupSuccessCustomer from "./SignupSuccessCustomer";
 import { useState } from "react";
 // import Background from "./css/background.png";
 
-const SignUp = () => {
+const SignUpCustomer = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const submitForm = () => {
@@ -13,9 +13,9 @@ const SignUp = () => {
     <div className="background-image">
       <div className="form-container">
         {!isSubmitted ? (
-          <SignupForm submitForm={submitForm} />
+          <SignupFormCustomer submitForm={submitForm} />
         ) : (
-          <SignupSuccess />
+          <SignupSuccessCustomer />
         )}
         {/* <SignupSuccess /> */}
       </div>
@@ -23,4 +23,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default SignUpCustomer;
