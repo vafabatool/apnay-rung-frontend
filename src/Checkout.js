@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import CustomerNavbar from "./CustomerNavbar";
 import Memory from "./Memory";
 import BottomBar from "./BottomBar";
+import { Link } from "react-router-dom";
 
 const Checkout = () => {
   let initialValue = {
@@ -191,17 +192,24 @@ const Checkout = () => {
           <br /> IBAN: PK48HABB12345678910
         </p>{" "}
         <br />
-        <input
-          type="submit"
-          className="submit-button2"
-          value="Return to Cart"
-        ></input>
-        <input
-          type="submit"
-          className="submit-button3"
-          value="Confirm Order"
-        ></input>
+        <Link to="/ShoppingCart">
+          <input
+            type="submit"
+            className="submit-button2"
+            value="Return to Cart"
+          ></input>
+        </Link>
+        <Link to="/OrderConfirmation">
+          <input
+            type="submit"
+            className="submit-button3"
+            value="Confirm Order"
+          ></input>
+        </Link>
       </form>
+      <br />
+      <br />
+      <br />
       <BottomBar />
     </div>
   );

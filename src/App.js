@@ -13,6 +13,7 @@ import Tutorials from "./Tutorials";
 // import UpdateProduct from "./UpdateProduct";
 // import AddProduct from "./AddProduct";
 // import Product from "./Product";
+import OrderConfirmation from "./OrderConfirmation";
 import ViewCustomers from "./ViewCustomers";
 import ShoppingCart from "./ShoppingCart";
 import Checkout from "./Checkout";
@@ -40,6 +41,11 @@ export default function App() {
           <Route path="/ShoppingCart" exact component={ShoppingCart} />
           <Route path="/Checkout" exact component={Checkout} />
           <Route path="/Catalog" exact component={Catalog} />
+          <Route
+            path="/OrderConfirmation"
+            exact
+            component={OrderConfirmation}
+          />
           <Route path="/AdminPanel" exact component={AdminPanel} />
           <Route exact path="/SellerPanel" component={SellerPanel} />
           <Route path="/" exact component={CustomerPanel} />
