@@ -6,12 +6,11 @@ import AddBoxIcon from "@material-ui/icons/AddBox";
 import { useState } from "react";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
-import "bootstrap/dist/css/bootstrap.css";
-// import deleteModal from "./deleteModal";
+// import Modal from "react-bootstrap/Modal";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Modal, Button } from "react-bootstrap";
 
 const Counter = (props) => {
-  // const [qty, setQuantity] = useState(1);
-
   const increment = () => {
     props.qtyFunc(props.qty + 1);
   };
@@ -39,31 +38,6 @@ const Counter = (props) => {
             }}
           />{" "}
         </button>
-      </div>
-    </div>
-  );
-};
-
-const deleteModal = () => {
-  return (
-    <div class="modal" id="myModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Modal Heading</h4>
-            <button type="button" class="close" data-dismiss="modal">
-              &times;
-            </button>
-          </div>
-
-          <div class="modal-body">Modal body..</div>
-
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">
-              Close
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   );
@@ -100,18 +74,16 @@ const ShoppingCart = () => {
     ]
   };
 
-  const deleteFunc = () => {
-    return (
-      <div>
-        <deleteModal />
-      </div>
-    );
-  };
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const renderTableData = () => {
     return state.products.map((product, index) => {
       const { productID, productTitle, quantity, price } = product; //destructuring
       const [qty, setQuantity] = useState(quantity);
+      const [isOpen, SetOpen] = useState(false);
       return (
         <tr className="data">
           <td>{productID}</td>
@@ -123,7 +95,7 @@ const ShoppingCart = () => {
           <td>PKR {price}</td>
           <td>PKR {qty * price}</td>
           <td>
-            <a href="#delete" className="link" onClick={deleteFunc()}>
+            <a href="#top" className="link" onClick={handleShow}>
               Delete
             </a>
           </td>
@@ -171,6 +143,28 @@ const ShoppingCart = () => {
         </div>
       </div>
       <BottomBar />
+      <Modal show={show} onHide={handleClose} className="delete-modal">
+        <Modal.Header closeButton>
+          <Modal.Title>Confirm Delete</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Are you sure you want to delete this product?</Modal.Body>
+        <Modal.Footer>
+          <Button
+            variant="secondary"
+            onClick={handleClose}
+            className="delete-secondary"
+          >
+            Don't Delete
+          </Button>
+          <Button
+            variant="primary"
+            onClick={handleClose}
+            className="delete-primary"
+          >
+            Delete Product
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };
