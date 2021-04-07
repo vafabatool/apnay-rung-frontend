@@ -36,7 +36,8 @@ export default function App() {
           {/* <Notifications /> */}
           {/* <QueryForms /> */}
           {/* <Inventory /> */}
-          {/* <ApproveSellers /> */}
+          <ApproveSellers />
+          {/* Check */}
           <Route path="/ApproveSellers" exact component={ApproveSellers} />
           {/* <Tutorials /> */}
           <Route path="/Tutorials" exact component={Tutorials} />
