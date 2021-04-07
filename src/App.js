@@ -15,7 +15,8 @@ import Tutorials from "./Tutorials";
 // import Product from "./Product";
 import ViewCustomers from "./ViewCustomers";
 import ShoppingCart from "./ShoppingCart";
-// import Checkout from "./Checkout";
+import Checkout from "./Checkout";
+import Catalog from "./Catalog";
 import CustomerSettings from "./CustomerSettings";
 import CustomerPanel from "./CustomerPanel";
 import SellerPanel from "./SellerPanel";
@@ -28,34 +29,20 @@ export default function App() {
       <Switch>
         <div className="App">
           <Route path="/AdminSettings" exact component={AdminSettings} />
-          {/* <AdminSettings /> */}
           <Route path="/CustomerSettings" exact component={CustomerSettings} />
-          {/* <CustomerSettings /> */}
-          {/* <CustomerSettings /> */}
-          {/* <ShoppingCart /> */}
-          {/* <Notifications /> */}
-          {/* <QueryForms /> */}
-          {/* <Inventory /> */}
-          <ApproveSellers />
-          {/* Check */}
           <Route path="/ApproveSellers" exact component={ApproveSellers} />
-          {/* <Tutorials /> */}
           <Route path="/Tutorials" exact component={Tutorials} />
           <Route path="/Notifications" exact component={Notifications} />
-          {/* <ViewOrders />  */}
-          {/* <CustomerNavBar /> */}
-          {/* <AdminSettings /> */}
-          {/* <UpdateProduct /> */}
           <Route path="/ViewAllProducts" exact component={ViewAllProducts} />
           <Route path="/ViewOrders" exact component={ViewOrders} />
           <Route path="/ViewSellers" exact component={ViewSellers} />
           <Route path="/ViewCustomers" exact component={ViewCustomers} />
-          {/* <Product /> */}
-          {/* <AddProduct /> */}
-          {/* <Checkout /> */}
+          <Route path="/ShoppingCart" exact component={ShoppingCart} />
+          <Route path="/Checkout" exact component={Checkout} />
+          <Route path="/Catalog" exact component={Catalog} />
           <Route path="/AdminPanel" exact component={AdminPanel} />
-          <Route exact path="/" component={SellerPanel} />
-          <Route path="/CustomerPanel" exact component={CustomerPanel} />
+          <Route exact path="/SellerPanel" component={SellerPanel} />
+          <Route path="/" exact component={CustomerPanel} />
         </div>
       </Switch>
     </Router>
