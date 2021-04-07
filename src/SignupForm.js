@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
+// import UseForm from "./UseForm";
 import "./styles.css";
 
 const SignUpForm = ({ submitForm }) => {
-  // const {submit} =
   const [values, setValues] = useState({
     userName: "",
     email: "",
