@@ -811,7 +811,7 @@ h4 {
 .form-inputs p {
   font-size: 0.8rem;
   margin-top: 0.5rem;
-  color: #f00e0e;
+  color: #ffffff;
 
   margin: 0%;
 }
@@ -903,4 +903,101 @@ h4 {
 
 .router-link {
   color: white;
+}
+.form-container {
+  background: #ffffff;
+  margin: 100px auto;
+  width: 1000px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-radius: 0px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.background-image {
+  min-height: 100vh;
+  background-image: url("/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+}
+
+.input-form-signup {
+  justify-content: left;
+  width: 45%;
+  height: 35px;
+  margin-left: 5%;
+  margin-top: 5%;
+  padding: 0.5%;
+  border-radius: 1px;
+  border: 1px solid #e5e5e5;
+  background-color: #efefef;
+}
+
+.next-step-btn {
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 2%;
+  position: relative;
+  left: 80.2%;
+  margin-top: 3%;
+  background-color: #d67d20;
+  color: white;
+  margin-bottom: 4%;
+  font-size: 25px;
+  cursor: pointer; /* Pointer/hand icon */
+}
+.signup-img {
+  width: 14%;
+  height: 70px;
+  margin-top: 7%;
+  margin-left: 90%;
+  margin-right: 42%;
+}
+.signup-heading {
+  text-align: center;
+  margin-top: 1%;
+  color: #2e2e2e;
+  font-size: 36px;
+  font-weight: 100;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 89%;
+}
+.signup-customer-btn {
+  width: 30%;
+  height: 34px;
+  background-color: #efefef;
+  color: #424242;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  margin-top: 2%;
+  /* margin-left: 30%; */
+  margin-right: 5%;
+  float: right;
+  display: block;
+  position: absolute;
+}
+.signup-btn-group button {
+  background-color: #efefef; /* Green background */
+  border: 1px solid #777777; /* Green border */
+  color: #424242; /* White text */
+  /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  /* float: left; Float the buttons side by side */
+  width: 25%;
+  height: 36px;
+  text-align: center;
+  font-size: 23px;
+  margin-top: 2%;
+  margin: 0 auto;
+  text-align: center;
+  /* display: inline-block; */
+  /* position: absolute; */
+}
+.signup-btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
 }

@@ -1,7 +1,7 @@
 import SignupForm from "./SignupForm";
 import SignupSuccess from "./SignupSuccess";
 import { useState } from "react";
-import Background from "./css/background.png";
+// import Background from "./css/background.png";
 
 const SignUp = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -10,7 +10,7 @@ const SignUp = () => {
     setIsSubmitted(true);
   };
   return (
-    <div style={{ backgroundImage: `url(${Background})` }}>
+    <div className="background-image">
       <div className="form-container">
         {!isSubmitted ? (
           <SignupForm submitForm={submitForm} />

@@ -19,7 +19,7 @@ const UseForm = (callback, validate) => {
   const submitHandler = (e) => {
     e.preventDefault();
 
-    // setErrors(validateInfo(values));
+    setErrors(validate(values));
     setIsSubmitting(true);
   };
   useEffect(() => {
@@ -28,7 +28,7 @@ const UseForm = (callback, validate) => {
     }
   }, [errors]);
 
-  return { handleChange, handleSubmit, values, errors };
+  return { changeHandler, submitHandler, values, errors };
 };
 
 export default UseForm;
