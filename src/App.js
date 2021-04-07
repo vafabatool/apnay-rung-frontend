@@ -17,11 +17,13 @@ import AdminSettings from "./AdminSettings";
 // import ShoppingCart from "./ShoppingCart";
 // import Checkout from "./Checkout";
 // import CustomerSettings from "./CustomerSettings";
+import SignUp from "./SignUp";
 
 export default function App() {
   return (
     <div className="App">
-      <AdminSettings />
+      {/* <AdminSettings /> */}
+      <SignUp />
       {/* <CustomerSettings /> */}
       {/* <CustomerSettings /> */}
       {/* <ShoppingCart /> */}
