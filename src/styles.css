@@ -1071,7 +1071,7 @@ h4 {
 }
 .background-image {
   min-height: 100vh;
-  background-image: url("/background.png");
+  background-image: url("/css/background.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 30px;

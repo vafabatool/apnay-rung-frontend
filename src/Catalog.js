@@ -36,7 +36,38 @@ const Catalog = () => {
         artist: "Wasif",
         price: "400",
         image: "https://enjoycss.com/bg-img/custom/20013-j3vxrl.njd7f.jpg"
-      }
+      },
+      {
+        title: "Green Khussa",
+        artist: "Wasif",
+        price: "400",
+        image: "https://enjoycss.com/bg-img/custom/20013-j3vxrl.njd7f.jpg"
+      },
+      {
+        title: "Green Khussa",
+        artist: "Wasif",
+        price: "400",
+        image: "https://enjoycss.com/bg-img/custom/20013-j3vxrl.njd7f.jpg"
+      },
+      {
+        title: "Green Khussa",
+        artist: "Wasif",
+        price: "400",
+        image: "https://enjoycss.com/bg-img/custom/20013-j3vxrl.njd7f.jpg"
+      },
+      {
+        title: "Green Khussa",
+        artist: "Wasif",
+        price: "400",
+        image: "https://enjoycss.com/bg-img/custom/20013-j3vxrl.njd7f.jpg"
+      },
+      {
+        title: "Green Khussa",
+        artist: "Wasif",
+        price: "400",
+        image: "https://enjoycss.com/bg-img/custom/20013-j3vxrl.njd7f.jpg"
+      },
+      
     ]
   };
 

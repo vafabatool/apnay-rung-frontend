@@ -3,7 +3,7 @@ import "./styles.css";
 import AdminNavbar from "./AdminNavbar";
 import Memory from "./Memory";
 import BottomBar from "./BottomBar";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 // import { Modal, Button } from "react-bootstrap";
 import NotificationsNoneIcon from "@material-ui/icons/NotificationsNone";
 import SettingsIcon from "@material-ui/icons/Settings";
