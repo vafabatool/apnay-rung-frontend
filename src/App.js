@@ -12,14 +12,14 @@ import "./styles.css";
 // import ViewCustomers from "./ViewCustomers";
 
 // Customer Pages
-import CustomerSettings from "./CustomerSettings";
 import CustomerNavbar from "./CustomerNavbar";
 import CustomerPanel from "./CustomerPanel";
-import CustomerNavBar from "./CustomerNavbar";
-import ViewAllProducts from "./ViewAllProducts";
-import QueryForms from "./QueryForms";
+import CustomerNavbar from "./CustomerNavbar";
 import ShoppingCart from "./ShoppingCart";
 import Checkout from "./Checkout";
+// import CustomerSettings from "./CustomerSettings";
+// import ViewAllProducts from "./ViewAllProducts";
+// import QueryForms from "./QueryForms";
 
 // Seller Pages
 // import SellerPanel from "./SellerPanel";
@@ -47,11 +47,11 @@ export default function App() {
           {/* Customer Pages */}
           <Route path="/CustomerNavbar" exact component={CustomerNavbar} />
           <Route path="/CustomerPanel" exact component={CustomerPanel} />
-          {/* <Route path="/CustomerSettings" exact component={CustomerSettings} />
-          <Route path="/ViewAllProducts" exact component={ViewAllProducts} />
-          <Route path="/QueryForms" exact component={QueryForms} /> */}
           <Route path="/ShoppingCart" exact component={ShoppingCart} />
           <Route path="/Checkout" exact component={Checkout} />
+          {/* <Route path="/CustomerSettings" exact component={CustomerSettings} /> */}
+          {/* <Route path="/ViewAllProducts" exact component={ViewAllProducts} /> */}
+          {/* <Route path="/QueryForms" exact component={QueryForms} /> */}
 
           {/* Sellers Pages */}
           {/* <Route path="/" exact component={SellerPanel} /> */}
