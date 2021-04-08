@@ -14,7 +14,6 @@ import "./styles.css";
 // Customer Pages
 import CustomerNavbar from "./CustomerNavbar";
 import CustomerPanel from "./CustomerPanel";
-import CustomerNavbar from "./CustomerNavbar";
 import ShoppingCart from "./ShoppingCart";
 import Checkout from "./Checkout";
 // import CustomerSettings from "./CustomerSettings";
