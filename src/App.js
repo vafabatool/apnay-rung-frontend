@@ -23,39 +23,7 @@ import CustomerPanel from "./CustomerPanel";
 import SellerPanel from "./SellerPanel";
 import AdminPanel from "./AdminPanel";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import Checkout from "./Checkout";
 
-import OrderConfirmation from "./OrderConfirmation";
-import ViewCustomers from "./ViewCustomers";
-import ShoppingCart from "./ShoppingCart";
-import Checkout from "./Checkout";
-import Catalog from "./Catalog";
-import CustomerSettings from "./CustomerSettings";
-// import CustomerPanel from "./CustomerPanel";
-// import SellerPanel from "./SellerPanel";
-// import AdminPanel from "./AdminPanel";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import SignUpCustomer from "./SignUpCustomer";
-import SignUpSeller from "./SignUpSeller";
-import Login from "./Login";
-
-export default function App() {
-  return (
-    <Router>
-      <Switch>
-        <div className="App">
-          <Route path="/AdminSettings" exact component={AdminSettings} />
-          <Route path="/CustomerSettings" exact component={CustomerSettings} />
-          <Route path="/ApproveSellers" exact component={ApproveSellers} />
-          <Route path="/Tutorials" exact component={Tutorials} />
-          <Route path="/Notifications" exact component={Notifications} />
-          <Route path="/ViewAllProducts" exact component={ViewAllProducts} />
-          <Route path="/ViewOrders" exact component={ViewOrders} />
-          <Route path="/ViewSellers" exact component={ViewSellers} />
-          <Route path="/ViewCustomers" exact component={ViewCustomers} />
-          <Route path="/ShoppingCart" exact component={ShoppingCart} />
-          <Route path="/Checkout" exact component={Checkout} />
-          <Route path="/Catalog" exact component={Catalog} />
 export default function App() {
   return (
     <Router>
@@ -81,23 +49,6 @@ export default function App() {
           <Route path="/AdminPanel" exact component={AdminPanel} />
           <Route exact path="/SellerPanel" component={SellerPanel} />
           <Route path="/CustomerPanel" exact component={CustomerPanel} />
-        </div>
-      </Switch>
-    </Router>
-  );
-}
-
-          <Route
-            path="/OrderConfirmation"
-            exact
-            component={OrderConfirmation}
-          />
-          {/* <SignUpCustomer /> */}
-          {/* <SignUpSeller /> */}
-          <Login />
-          {/* <Route path="/AdminPanel" exact component={AdminPanel} /> */}
-          {/* <Route exact path="/SellerPanel" component={SellerPanel} /> */}
-          {/* <Route path="/" exact component={CustomerPanel} /> */}
         </div>
       </Switch>
     </Router>
