@@ -2,6 +2,7 @@ import "./styles.css";
 // Common Pages
 // import Product from "./Product";
 // import Notifications from "./Notifications";
+import Homepage from "./Homepage.js";
 
 // Admin Pages
 // import AdminPanel from "./AdminPanel";
@@ -35,7 +36,6 @@ export default function App() {
     <Router>
       <Switch>
         <div className="App">
-
           {/* Admin Pages */}
           {/* <Route path="/AdminPanel" exact component={AdminPanel} /> */}
           {/* <Route path="/AdminSettings" exact component={AdminSettings} /> */}
@@ -59,7 +59,7 @@ export default function App() {
 
           {/* Common Pages */}
           {/* <Route path="/Notifications" exact component={Notifications} /> */}
-
+          <Homepage />
         </div>
       </Switch>
     </Router>
