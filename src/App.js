@@ -1,44 +1,66 @@
 import "./styles.css";
-// import AdminSettings from "./AdminSettings";
-// import ViewSellers from "./ViewSellers";
-// import CustomerNavBar from "./CustomerNavbar";
-// import SellerNavbar from "./SellerNavbar";
-// import Notifications from "./Notifications";
-// import QueryForms from "./QueryForms";
-// import ViewOrders from "./ViewOrders";
-// import ViewAllProducts from "./ViewAllProducts";
-// import Inventory from "./Inventory";
-// import ApproveSellers from "./ApproveSellers";
-// import Tutorials from "./Tutorials";
-// import UpdateProduct from "./UpdateProduct";
-// import AddProduct from "./AddProduct";
+// Common Pages
 // import Product from "./Product";
-// import ViewCustomers from "./ViewCustomers";
-// import ShoppingCart from "./ShoppingCart";
-// import Checkout from "./Checkout";
-// import CustomerSettings from "./CustomerSettings";
-// import CustomerPanel from "./CustomerPanel";
-// import SellerPanel from "./SellerPanel";
-// import AdminPanel from "./AdminPanel";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import Notifications from "./Notifications";
 
+// Admin Pages
+// import AdminPanel from "./AdminPanel";
+// import AdminNavbar from "./AdminNavbar";
+// import AdminSettings from "./AdminSettings";
+// import ApproveSellers from "./ApproveSellers";
+// import ViewSellers from "./ViewSellers";
+// import ViewCustomers from "./ViewCustomers";
+
+// Customer Pages
+import CustomerSettings from "./CustomerSettings";
+import CustomerNavbar from "./CustomerNavbar";
+import CustomerPanel from "./CustomerPanel";
+import CustomerNavBar from "./CustomerNavbar";
+import ViewAllProducts from "./ViewAllProducts";
+import QueryForms from "./QueryForms";
+import ShoppingCart from "./ShoppingCart";
+import Checkout from "./Checkout";
+
+// Seller Pages
+// import SellerPanel from "./SellerPanel";
+// import Tutorials from "./Tutorials";
+// import SellerNavbar from "./SellerNavbar";
+// import ViewOrders from "./ViewOrders";
+// import Inventory from "./Inventory";
+// import AddProduct from "./AddProduct";
+// import UpdateProduct from "./UpdateProduct";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 export default function App() {
   return (
     <Router>
       <Switch>
         <div className="App">
-          {/* <Route path="/AdminSettings" exact component={AdminSettings} />
-          <Route path="/CustomerSettings" exact component={CustomerSettings} />
-          <Route path="/ApproveSellers" exact component={ApproveSellers} />
-          <Route path="/Tutorials" exact component={Tutorials} />
-          <Route path="/Notifications" exact component={Notifications} />
+
+          {/* Admin Pages */}
+          {/* <Route path="/AdminPanel" exact component={AdminPanel} /> */}
+          {/* <Route path="/AdminSettings" exact component={AdminSettings} /> */}
+          {/* <Route path="/ApproveSellers" exact component={ApproveSellers} /> */}
+          {/* <Route path="/ViewSellers" exact component={ViewSellers} /> */}
+          {/* <Route path="/ViewCustomers" exact component={ViewCustomers} /> */}
+
+          {/* Customer Pages */}
+          <Route path="/CustomerNavbar" exact component={CustomerNavbar} />
+          <Route path="/CustomerPanel" exact component={CustomerPanel} />
+          {/* <Route path="/CustomerSettings" exact component={CustomerSettings} />
           <Route path="/ViewAllProducts" exact component={ViewAllProducts} />
-          <Route path="/ViewOrders" exact component={ViewOrders} />
-          <Route path="/ViewSellers" exact component={ViewSellers} />
-          <Route path="/ViewCustomers" exact component={ViewCustomers} /> */}
-          <Route path="/AdminPanel" exact component={AdminPanel} />
+          <Route path="/QueryForms" exact component={QueryForms} /> */}
+          <Route path="/ShoppingCart" exact component={ShoppingCart} />
+          <Route path="/Checkout" exact component={Checkout} />
+
+          {/* Sellers Pages */}
           {/* <Route path="/" exact component={SellerPanel} /> */}
-          {/* <Route path="/CustomerPanel" exact component={CustomerPanel} /> */}
+          {/* <Route path="/Tutorials" exact component={Tutorials} /> */}
+          {/* <Route path="/ViewOrders" exact component={ViewOrders} /> */}
+
+          {/* Common Pages */}
+          {/* <Route path="/Notifications" exact component={Notifications} /> */}
+
         </div>
       </Switch>
     </Router>

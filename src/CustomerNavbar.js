@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
+import Logo from "./css/logo.png";
+
 
 const CustomerNavbar = () => {
   {
@@ -68,7 +70,7 @@ const CustomerNavbar = () => {
   };
   return (
     <div className="Topbar" id="myTopnav">
-      <img className="logo" src={require("./css/logo.png")} alt="logo" />
+      <img className="logo" src={Logo} alt="logo" />
       <a href="#home" onClick={setHomeClass} className={home ? "active" : ""}>
         Home
       </a>

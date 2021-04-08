@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./styles.css";
+import Logo from "./css/logo.png";
 // import Button from "@material-ui/core/Button";
 // import { makeStyles } from "@material-ui/core/styles";
 // import NotificationsNoneIcon from "@material-ui/icons/NotificationsNone";
@@ -48,7 +49,7 @@ const SellerNavbar = () => {
   };
   return (
     <div className="Topbar" id="myTopnav">
-      <img className="logo" src={require("./css/logo.png")} alt="logo" />
+      <img className="logo" src={Logo} alt="logo" />
       <a href="#home" onClick={setHomeClass} className={home ? "active" : ""}>
         Home
       </a>
