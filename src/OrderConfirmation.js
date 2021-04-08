@@ -3,6 +3,9 @@ import AdminNavbar from "./AdminNavbar";
 import Memory from "./Memory";
 import BottomBar from "./BottomBar";
 import AddBoxIcon from "@material-ui/icons/AddBox";
+import { Link } from "react-router-dom";
+import { Modal, Button } from "react-bootstrap";
+import { useState } from "react";
 
 const OrderConfirmation = () => {
   let state = {
@@ -42,6 +45,10 @@ const OrderConfirmation = () => {
   };
 
   let address = "Sherlock Holmes, 221B Bakers Street";
+
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const renderTableData = () => {
     return state.products.map((product, index) => {
@@ -96,8 +103,26 @@ const OrderConfirmation = () => {
         type="submit"
         className="confirmOrder-button"
         value="Confirm Order"
+        onClick={handleShow}
       ></input>
       <BottomBar />
+      <Modal show={show} onHide={handleClose} className="delete-modal">
+        <Modal.Header closeButton>
+          <Modal.Title>Order Confirmed!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Your order has been confirmed</Modal.Body>
+        <Modal.Footer>
+          <Link to="./Homepage">
+            <Button
+              variant="primary"
+              onClick={handleClose}
+              className="delete-primary"
+            >
+              Back to Home
+            </Button>
+          </Link>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };
