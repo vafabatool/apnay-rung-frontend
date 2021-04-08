@@ -106,7 +106,7 @@ h3 {
   /* text-indent: 9px; */
   -o-text-overflow: clip;
   text-overflow: clip;
-  background: url("/css/logout.png") #f9f9f9;
+  /* background: url("/css/logout.png") #f9f9f9; */
   background-repeat: no-repeat;
   background-position: 7% 50%;
   -webkit-background-origin: padding-box;
