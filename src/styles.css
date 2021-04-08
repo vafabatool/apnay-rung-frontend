@@ -23,6 +23,7 @@ h1 {
   font-weight: bold;
   display: inline;
   margin-left: 1.5%;
+  padding-top: 2%;
 }
 .logo-main {
   width: 5%;
@@ -48,7 +49,7 @@ h3 {
   width: 100%;
   overflow: hidden;
   background-color: #efefef;
-  height: 2%;
+  height: 2.5%;
 }
 .Topbar a {
   float: left;
@@ -86,7 +87,10 @@ h3 {
   color: #2e2e2e;
 }
 .logout_button {
-  width: 5%;
+  width: 4.5%;
+  margin-bottom: 5px;
+  text-align: center;
+  height: 3%;
   float: right;
   margin-top: 5px;
   margin-right: 10px;
@@ -99,7 +103,7 @@ h3 {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   color: #2e2e2e;
-  text-indent: 9px;
+  /* text-indent: 9px; */
   -o-text-overflow: clip;
   text-overflow: clip;
   background: url("/css/logout.png") #f9f9f9;
@@ -829,7 +833,7 @@ h4 {
   z-index: -1;
   position: relative;
   height: 350px;
-  width: 100%;
+  width: 100% !important;
 }
 .home-text {
   z-index: 0;
@@ -863,7 +867,7 @@ h4 {
 .featured-prod {
   text-decoration: underline;
   text-decoration-color: #d67d20;
-  margin-left: 5%;
+  margin-left: 7%;
   font-display: bold;
   font-size: 20px;
   font-weight: 200px;
@@ -876,7 +880,13 @@ h4 {
   padding-bottom: 1%;
   color: #ffffff;
   text-align: center;
-  margin-top: 2%;
+  margin-top: 5%;
+  width: 90%;
+  margin-left: 5%;
+}
+.orange-home-bar p {
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 .grey-home-bar {
   background-color: #efefef;
@@ -888,6 +898,12 @@ h4 {
   text-decoration: underline;
   text-decoration-color: #d67d20;
   font-size: medium;
+  width: 90%;
+  margin-left: 5%;
+}
+.grey-home-bar p {
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 .seller-main {
   margin-left: 13%;
@@ -925,6 +941,8 @@ h4 {
 }
 .grey-grey {
   background-color: #efefef;
+  width: 90%;
+  margin-left: 5%;
 }
 .grey-main {
   margin-top: 0.5%;
