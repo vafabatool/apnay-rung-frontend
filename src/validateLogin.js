@@ -1,4 +1,4 @@
-export default function validateInfo(values) {
+export default function validateLogin(values) {
   let errors = {};
 
   if (!values.userName.trim()) {
@@ -21,6 +21,16 @@ export default function validateInfo(values) {
     errors.password2 = "Password is required";
   } else if (values.password2 !== values.password) {
     errors.password2 = "Passwords do not match";
+  }
+
+  if (!values.address) {
+    errors.address = "Address required";
+  }
+
+  if (!values.phonenumber) {
+    errors.phonenumber = "Phone number required";
+  } else if (values.phonenumber.length < 10) {
+    errors.password = "Phone number needs 10 digits";
   }
 
   return errors;

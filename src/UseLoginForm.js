@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 
-const UseForm = (callback, validate) => {
+const UseLoginForm = (callback, validate) => {
   const [values, setValues] = useState({
     userName: "",
     email: "",
     password: "",
-    password2: ""
+    password2: "",
+    address: "",
+    phonenumber: ""
   });
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -31,4 +33,4 @@ const UseForm = (callback, validate) => {
   return { changeHandler, submitHandler, values, errors };
 };
 
-export default UseForm;
+export default UseLoginForm;
