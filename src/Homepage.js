@@ -1,5 +1,6 @@
 import "./styles.css";
 import CustomerNavBar from "./CustomerNavbar";
+import HomeNavbar from "./HomeNavbar";
 import BottomBar from "./BottomBar";
 import logo from "./css/logo.png";
 import home from "./css/home.png";
@@ -9,9 +10,8 @@ import handshake from "./css/handshake.png";
 import pk from "./css/pk.svg";
 
 //temporary//
-import handicraft from "./css/handi1.png";
-import handicraft2 from "./css/hand2.png";
-// import "bootstrap/dist/css/bootstrap.css";
+
+import "bootstrap/dist/css/bootstrap.css";
 
 const Homepage = () => {
   let state = {
@@ -108,7 +108,7 @@ const Homepage = () => {
   };
   return (
     <div>
-      <CustomerNavBar />
+      <HomeNavbar />
       <span>
         <img className="logo-main" src={logo} alt="logo" />
         <h1 className="main-title">APNAY RUNG</h1>
@@ -139,7 +139,56 @@ const Homepage = () => {
         </p>
       </div>
       <p className="featured-prod">Explore Art by Region </p>
-      <img className="flag-image" src={pk} alt="map" />
+      <div id="image_map">
+        <map name="map_example">
+          <area
+            //sindh
+            href="https://facebook.com"
+            alt="Facebook"
+            target="_blank"
+            shape="poly"
+            coords="190,460, 195,350, 270,330, 310,450"
+          ></area>
+          <area
+            //balochistan
+            href="https://facebook.com"
+            alt="Facebook"
+            target="_blank"
+            shape="poly"
+            coords="30,430, 180,430, 180,330, 260,310, 270,200, 30,300"
+          ></area>
+          <area
+            //punjab
+            href="https://facebook.com"
+            alt="Facebook"
+            target="_blank"
+            shape="poly"
+            coords="280,300, 320,340, 435,190, 350,130"
+          ></area>
+          <area
+            //kpk
+            href="https://en.wikipedia.org/wiki/Social_media"
+            target="_blank"
+            alt="Wikipedia Social Media Article"
+            shape="poly"
+            coords="256,180, 295,207, 395,90, 330,30"
+          ></area>
+          <area
+            //gilgit
+            href="https://en.wikipedia.org/wiki/Social_media"
+            target="_blank"
+            alt="Wikipedia Social Media Article"
+            shape="poly"
+            coords="366,40, 460,100, 495,70, 430,10"
+          ></area>
+        </map>
+        <img
+          src={pk}
+          className="flag-image"
+          alt="map example"
+          usemap="#map_example"
+        />
+      </div>
       <br />
       <br />
       <br />
